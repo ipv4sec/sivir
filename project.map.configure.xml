@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map  srs="+init=epsg:4326">
+    <Style name="mask">
+        <Rule>
+            <PolygonSymbolizer fill-opacity="1" fill="white" />
+            <LineSymbolizer stroke="white" stroke-width="1" />
+        </Rule>
+    </Style>
+    <Layer name="zyra" srs="+init=epsg:4326">
+        <StyleName>mask</StyleName>
+        <Datasource>
+            <Parameter name="dbname">loli</Parameter>
+            <Parameter name="table">test</Parameter>
+            <Parameter name="type">postgis</Parameter>
+            <Parameter name="user">postgres</Parameter>
+            <Parameter name="password">passwd</Parameter>
+            <Parameter name="host">127.0.0.1</Parameter>
+        </Datasource>
+    </Layer>
+</Map>
